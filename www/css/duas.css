@@ -1,0 +1,142 @@
+#content {
+    margin-top: 80px !important;
+    padding-bottom: 80px;
+}
+
+#duas_part1 {
+    display: block;
+    padding: 15px;
+}
+
+#duas_part2 {
+    display: none;
+    padding: 15px;
+}
+
+#hisnmuslim_info {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+#hisnmuslim_info_book {
+    font-size: 50px;
+    color: var(--color_4);
+    margin-bottom: 15px;
+}
+
+#hisnmuslim_info_text {
+    font-size: 14px;
+    color: var(--white);
+    line-height: 1.6;
+    margin: 0;
+}
+
+#duas_index {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    direction: rtl;
+    margin-top: 10px;
+}
+
+#duas_index th {
+    color: var(--color_font_grey);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+    text-align: center;
+}
+
+#duas_index td {
+    padding: 15px;
+    background: var(--background_div);
+    color: var(--white);
+    font-size: 15px;
+    border: none;
+    box-shadow: var(--shadow-soft);
+}
+
+#duas_index td:first-child {
+    border-radius: 0 12px 12px 0;
+    width: 50px;
+    color: var(--color_4);
+    font-weight: bold;
+}
+
+#duas_index td:last-child {
+    border-radius: 12px 0 0 12px;
+    text-align: right;
+}
+
+#duas_index tr {
+    transition: transform 0.2s ease;
+}
+
+#duas_index tr:active {
+    transform: scale(0.98);
+}
+
+#duas_ul_category {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#duas_ul_category li {
+    background: var(--background_div);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 15px;
+    direction: rtl;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+}
+
+.hisnmuslim_category {
+    font-family: var(--Amiri);
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--white);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.duas_actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 15px;
+}
+
+.duas_btn {
+    background: var(--background_div_hover);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.duas_btn:active {
+    transform: scale(0.9);
+}
+
+.duas_btn i {
+    font-size: 18px;
+}

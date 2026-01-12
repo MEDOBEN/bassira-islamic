@@ -1,0 +1,9 @@
+#more {
+    color: var(--background_div_hover) !important;
+}
+
+#content {
+    margin-top: 80px;
+}
+
+/* التعديلات العامة موروثة من main.css */

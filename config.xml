@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.bassira.islamic" version="1.2.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>BASSIRA</name>
+    <description>تطبيق إسلامي سهل الإستخدام و جامع للكثير من الميزات التي يحتاجها المسلم في يومه</description>
+    <author email="rn0x.me@gmail.com" href="https://github.com/Alsarmad/altaqwaa_android">BASSIRA Team</author>
+    <content src="index.html" />
+
+    <!-- Allow-intent settings -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <!-- Preferences -->
+    <preference name="AndroidLaunchMode" value="singleInstance"/>
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="KeepRunning" value="true" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="ErrorUrl" value="error.html" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="NavigationBarLight" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="BackgroundColor" value="#f5f6fa" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <preference name="NavigationBarBackgroundColor" value="#ffffff" />
+    <preference name="android-compileSdkVersion" value="34" />
+    <preference name="android-minSdkVersion" value="26" />
+    <preference name="SplashScreenBackgroundColor" value="#f5f6fa" />
+    <!-- StatusBar settings -->
+    <preference name="StatusBarBackgroundColor" value="#f5f6fa" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="default" />
+
+    <!-- Android platform settings -->
+    <platform name="android">
+
+        <!-- Icons -->
+        <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+
+        
+        <resource-file src="resources/ic_stat/drawable-mdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-mdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/ic_stat/drawable-hdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-hdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/ic_stat/drawable-xhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/ic_stat/drawable-xxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/ic_stat/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable-xxxhdpi/ic_stat_onesignal_default.png" />
+        <resource-file src="resources/ic_stat/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="app/src/main/res/drawable/ic_stat_onesignal_default.png" />
+
+        <!-- Splash Screen settings -->
+        <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="FadeSplashScreen" value="false"/>
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="resources/splash.png" />
+        <preference name="AndroidWindowSplashScreenBackground" value="#f5f6fa" />
+        <config-file target="res/xml/config.xml" parent="/*">
+
+        <!-- Permissions -->
+        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
+            <!-- أي أذونات إضافية يمكنك إضافتها هنا حسب احتياجات تطبيقك -->
+        </config-file>
+
+    </config-file>
+    </platform>
+</widget>

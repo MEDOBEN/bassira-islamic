@@ -1,0 +1,105 @@
+#content {
+    margin-top: 80px !important;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+#sabha_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+#sabha_display {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-soft), inset 0 0 20px rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+#sabha_number {
+    font-family: var(--Cairo);
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--white);
+    margin: 0;
+    line-height: 1;
+}
+
+#sabha_label {
+    font-size: 18px;
+    color: var(--color_4);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#sabha_controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#sabha_clicker {
+    width: 120px;
+    height: 120px;
+    background: var(--background_div_hover);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+#sabha_clicker:active {
+    transform: scale(0.9);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+.clicker_inner {
+    width: 60%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+#repetition_bt {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-family: var(--Cairo);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#repetition_bt i {
+    font-size: 20px;
+    color: var(--color_4);
+}
+
+#repetition_bt:active {
+    transform: rotate(180deg) scale(0.95);
+}

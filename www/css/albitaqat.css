@@ -1,0 +1,129 @@
+#content {
+    margin-top: 80px !important;
+    padding: 0 15px;
+}
+
+#albitaqat {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+}
+
+#albitaqat_logo {
+    font-size: 50px;
+    color: var(--white-div);
+    margin-bottom: 15px;
+}
+
+#albitaqat p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color_font_grey);
+}
+
+/* index albitaqat */
+
+#albitaqat_index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 80px;
+}
+
+#albitaqat_index li {
+    background: var(--background_div);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#albitaqat_index li:active {
+    transform: scale(0.95);
+    background: var(--background_div_hover);
+}
+
+#albitaqat_index h3 {
+    margin: 0;
+    color: var(--white-div);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#albitaqat_index p {
+    margin-top: 5px;
+    color: var(--color_font_grey);
+    font-size: 0.85rem;
+}
+
+/* albitaqat data */
+
+#albitaqat_part2 {
+    display: none;
+    padding-bottom: 100px;
+}
+
+#albitaqat_audio {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    background: var(--glass-bg);
+}
+
+#albitaqat_data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#albitaqat_data li {
+    background: var(--background_div);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+}
+
+#albitaqat_data li h3 {
+    color: var(--white-div);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 10px;
+}
+
+#albitaqat_data li p {
+    color: var(--color_font_grey);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1rem;
+    text-align: justify;
+    direction: rtl;
+}
+
+@media (max-width: 350px) {
+    #albitaqat_index {
+        grid-template-columns: 1fr;
+    }
+}

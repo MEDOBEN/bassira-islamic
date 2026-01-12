@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html data-theme="theme_1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/css/var.css"> <!-- المتغيرات -->
+    <link rel="stylesheet" href="/css/main.css"> <!-- ملف الإستايل الأساسي -->
+    <link rel="stylesheet" href="/css/footer.css"> <!-- ملف css الفوتر -->
+    <link rel="stylesheet" href="/css/duas.css">
+    <link rel="stylesheet" href="/css/more.css">
+    <link rel="stylesheet" href="/css/animate.min.css"> <!-- مؤثرات الإنتقال -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>BASSIRA - الأدعية</title>
+</head>
+
+<body>
+
+    <div id="more_header" class="animate__animated animate__fadeIn">
+        <i class="ph ph-caret-right" id="back"></i>
+        <p id="more_header_title">
+            الأدعية المختارة
+        </p>
+    </div>
+
+    <div id="content" class="animate__animated animate__fadeIn">
+
+        <!-- ================ محتوى الصفحة =============== -->
+
+        <img src="/img/loading.svg" alt="loading" id="loading">
+
+        <div class="alert" id="alert">
+            <p class="text_alert">
+                تم النسخ بنجاح
+            </p>
+        </div>
+        
+        <div id="duas_part1">
+
+            <div id="hisnmuslim_info">
+                <i class="ph ph-hands-praying" id="hisnmuslim_info_book"></i>
+                <p id="hisnmuslim_info_text">
+                    مجموعة من الأدعية المختارة من القرآن الكريم والسنة النبوية وأدعية الأنبياء، مستوحاة من موسوعة الكلم الطيب.
+                </p>
+            </div>
+
+            <div class="search_container">
+                <i class="ph ph-magnifying-glass search_icon"></i>
+                <input type="text" id="Search_duas" placeholder="بحث في الأدعية...">
+            </div>
+
+            <table id="duas_index">
+                <thead>
+                    <tr>
+                        <th>م</th>
+                        <th>فئة الدعاء</th>
+                    </tr>
+                </thead>
+                <tbody id="duas_tbody">
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="duas_part2" style="display: none;">
+            <ul id="duas_ul_category">
+            </ul>
+        </div>
+
+        <!-- ================ محتوى الصفحة =============== -->
+
+    </div>
+
+    <footer id="footer">
+    </footer>
+
+    <script src="/cordova.js"></script>
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>

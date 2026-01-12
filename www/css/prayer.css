@@ -1,0 +1,132 @@
+#prayer {
+    color: var(--background_div_hover) !important;
+}
+
+#content {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#prayer_time {
+    display: none;
+    width: 100%;
+    direction: rtl;
+    font-family: var(--Cairo);
+    font-weight: 700;
+}
+
+#time {
+    display: flex;
+    direction: ltr;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+#hour_minutes {
+    color: var(--white);
+    font-size: 64px;
+    margin: 0 10px;
+}
+
+#seconds {
+    color: var(--background_div_hover);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color_font_grey);
+    font-size: 14px;
+    background-color: var(--background_div_2);
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+#city {
+    color: var(--background_div_hover);
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+#data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+#data_hijri, #data_Gregorian {
+    color: var(--color_font_grey);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#datoday {
+    color: var(--white);
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+#prayer_ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+#prayer_ul li {
+    background-color: var(--background_div);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.name_prayer {
+    color: var(--color_font_grey);
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.time_prayer {
+    color: var(--background_div_hover);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#remaining {
+    background-color: var(--background_div_hover);
+    color: #fff;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+#remaining_name {
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#remaining_time {
+    font-size: 32px;
+    font-weight: 800;
+}

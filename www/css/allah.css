@@ -1,0 +1,85 @@
+#content {
+    margin-top: 80px !important;
+    padding-bottom: 80px;
+}
+
+#allah_names {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+#allah_names li {
+    background: var(--background_div);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#allah_names li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--color_4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#allah_names li:active {
+    transform: scale(0.95);
+    background: var(--background_div_hover);
+}
+
+#allah_names li:active::before {
+    opacity: 1;
+}
+
+#allah_names h3 {
+    font-family: var(--Amiri);
+    font-size: 24px;
+    color: var(--color_4);
+    margin: 0 0 10px 0;
+}
+
+#allah_names p {
+    font-size: 14px;
+    color: var(--white);
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* التنسيق عند البحث */
+.search_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search_icon {
+    position: absolute;
+    right: 20px;
+    color: var(--color_4);
+    font-size: 20px;
+}
+
+#Search_allah {
+    width: 100%;
+    padding: 12px 50px 12px 20px !important;
+    margin: 0 !important;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html data-theme="theme_1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="/css/var.css"> <!-- المتغيرات -->
+    <link rel="stylesheet" href="/css/main.css"> <!-- ملف الإستايل الأساسي -->
+    <link rel="stylesheet" href="/css/footer.css"> <!-- ملف css الفوتر -->
+    <link rel="stylesheet" href="/css/albitaqat.css">
+    <link rel="stylesheet" href="/css/more.css">
+    <link rel="stylesheet" href="/css/animate.min.css"> <!-- مؤثرات الإنتقال -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>BASSIRA</title>
+</head>
+
+<body>
+
+    <img src="/img/loading.svg" alt="loading" id="loading">
+
+    <div id="more_header" class="animate__animated animate__fadeIn">
+
+        <i class="ph ph-caret-right" id="back"></i>
+
+        <p id="more_header_title">
+            بطاقات القرآن
+        </p>
+
+    </div>
+
+    <div id="content" class="animate__animated animate__fadeIn">
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+        <div id="albitaqat_part1">
+
+            <div id="albitaqat">
+
+                <i class="ph ph-cards" id="albitaqat_logo"></i>
+
+                <p>
+                    مشروع يهدف إلى خدمة القرآن الكريم وحفّاظِهِ وقارئيه، عن طريق توفير مَتْنٍ مختصرٍ شاملٍ لسور القرآن،
+                    وتوفير محتواه مقروؤاً ومسموعاً
+                </p>
+
+            </div>
+
+            <ul id="albitaqat_index">
+
+            </ul>
+
+        </div>
+
+        <div id="albitaqat_part2">
+
+            <audio id="albitaqat_audio" autoplay controls disablepictureinpicture controlslist="nodownload noplaybackrate">
+            
+            </audio>
+
+            <ul id="albitaqat_data">
+
+            </ul>
+
+        </div>
+
+        <!-- ================ ضع هنا محتوى الصفحة =============== -->
+
+    </div>
+
+
+    <footer id="footer">
+        <!-- الفوتر مربوط بالجافاسكربت -->
+    </footer>
+
+    <script src="/cordova.js"></script>
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>

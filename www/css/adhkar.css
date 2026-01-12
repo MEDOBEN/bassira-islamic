@@ -1,0 +1,249 @@
+#adhkar {
+    color: var(--background_div_hover) !important;
+}
+
+#adhkar_random {
+    display: block;
+    width: 95%;
+    margin: 25px auto;
+    background-color: var(--background_div);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+}
+
+#adhkar_random_title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--background_div_hover);
+    font-size: 18px;
+    text-align: center;
+}
+
+#adhkar_random_text {
+    font-family: var(--Amiri);
+    color: var(--white);
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.adhkar_random_font {
+    font-family: var(--Cairo);
+    font-weight: 400;
+    color: var(--color_font_grey);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#adhkar_random_reference {
+    color: var(--green);
+    margin-top: 10px;
+}
+
+.copy_and_paste {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.icon_c_p {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    filter: var(--icon-filter);
+}
+
+.icon_c_p:active {
+    transform: scale(0.8);
+}
+
+
+.adhkar {
+    display: block;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--background_div);
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.adhkar:nth-child(1) {
+    margin-top: 50px;
+}
+
+/* .adhkar:hover {
+    background-color: var(--background_div_hover);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.adhkar:hover .copy_and_paste {
+    background-color: var(--background_div_hover_2);
+}
+
+.adhkar:hover .repetition {
+    color: var(--green);
+}
+
+.adhkar:hover .repetition_number {
+    color: var(--white-div);
+}
+
+.adhkar:hover .text_bottom {
+    color: var(--green);
+} */
+
+.text_description {
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-family: var(--NotoSansArabic);
+    font-weight: 500;
+    color: #1fa05d;
+    font-size: 14px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.text_source {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-family: var(--NotoSansArabic);
+    color: #819953;
+    font-size: 12px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.text {
+    font-family: var(--Amiri);
+    color: var(--white);
+    font-size: var(--font_size_adhkar);
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 23px;
+    word-wrap: break-word;
+}
+
+.repetition {
+    text-align: center;
+    font-family: var(--NotoSansArabic);
+    font-weight: 500;
+    color: var(--white-div);
+    font-size: 14px;
+    border-radius: 10px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.repetition_number {
+    color: var(--background_div_hover_2);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    background-color: var(--background_body);
+    justify-content: center;
+    align-items: center;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: var(--background_div);
+    padding: 10px;
+    box-shadow: #0000001a 0px 10px 15px -3px, #0000000d 0px 4px 6px -2px;
+    position: fixed;
+    top: 0px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+#header p {
+    font-family: 'NotoSansArabic';
+    font-weight: 700;
+    color: var(--white-div);
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+#header img {
+    /* cursor: pointer; */
+    width: 20px;
+    right: 0px;
+    margin: 0 0 0 0;
+    position: absolute;
+    margin-right: 15px;
+    z-index: -1;
+}
+
+#adhkar_database {
+    list-style: none;
+    padding: 0;
+    margin: 15px auto;
+}
+
+#adhkar_database li {
+    background-color: var(--background_div_hover);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+
+#adhkar_database span {
+    font-weight:900;
+}
+
+.icon_copy_adhkar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.icon_repetition_adhkar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+/* @media (max-width: 330px) {
+    #adhkar_ul li {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
