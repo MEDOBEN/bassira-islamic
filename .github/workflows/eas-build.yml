@@ -4,6 +4,11 @@ on:
     branches:
       - master
   workflow_dispatch:
+    inputs:
+      profile:
+        description: 'EAS Build Profile (preview, production)'
+        required: true
+        default: 'preview'
 
 jobs:
   build:
@@ -35,4 +40,4 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build on EAS
-        run: eas build --platform android --profile preview --non-interactive
+        run: eas build --platform android --profile ${{ github.event.inputs.profile || 'preview' }} --non-interactive
