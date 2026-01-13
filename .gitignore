@@ -2,5 +2,5 @@ node_modules
 plugins
 platforms
 .idea
-package-lock.json
+# package-lock.json
 tqw.keystore

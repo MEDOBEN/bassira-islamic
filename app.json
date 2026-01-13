@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "BASSIRA",
+    "slug": "bassira-islamic",
+    "version": "1.2.7",
+    "android": {
+      "package": "com.bassira.islamic"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "74b7636d-4d90-43f9-9f36-a220b534e93a"
+      }
+    }
+  }
+}
