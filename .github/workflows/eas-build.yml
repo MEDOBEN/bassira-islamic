@@ -9,6 +9,8 @@ jobs:
   build:
     name: Install and Build
     runs-on: ubuntu-latest
+    env:
+      EXPO_USE_NPM: 1
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
